@@ -6,16 +6,11 @@ node {
         checkout scm
     }
 
-    stage('Build image') {
+    stage('Build hello-world image') {
         app = docker.build("hello_world")
     }
     
-    stage('Deploy Container') {
+    stage('Triggering ansible-docker job to deploy the container') {
         build job: 'ansible-docker'
     }
-    
-    stage('Bye') {
-        echo "Bye bye!"
-    }
-    
 }
