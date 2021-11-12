@@ -6,5 +6,5 @@ with open('test.txt', 'w') as f:
         f.write(line)
         f.write('\n')
         
-time.sleep(30)
+time.sleep(300)
         
