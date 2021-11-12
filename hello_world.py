@@ -5,4 +5,4 @@ outFile=open(outFileName, "w")
 outFile.write("Hello World!")
 outFile.close()
 
-time.sleep(300)
+time.sleep(60)
