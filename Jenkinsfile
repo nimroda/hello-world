@@ -15,7 +15,7 @@ node {
     }
     
     stage('Bye') {
-        echo "Bye bye!'
+        echo "Bye bye!"
     }
     
 }
