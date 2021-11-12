@@ -1,3 +1,5 @@
+import time
+
 outFileName="/data/test.txt"
 outFile=open(outFileName, "w")
 outFile.write("Hello World!")
