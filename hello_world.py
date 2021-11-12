@@ -1,10 +1,11 @@
+import os.path
 import time
 
-lines = ['Hello World']
-with open('test.txt', 'w') as f:
-    for line in lines:
-        f.write(line)
-        f.write('\n')
+save_path = '/data'
+completeName = os.path.join(save_path, "test.txt")         
+file1 = open(completeName, "w")
+toFile = raw_input("Hello World!")
+file1.write(toFile)
+file1.close()
         
 time.sleep(300)
-        
